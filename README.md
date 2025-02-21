@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
+# BétonArmé.ai
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le projet BétonArmé.ai.
 
-Currently, two official plugins are available:
+## Technologies utilisées
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + Vite
+- TypeScript
+- Chakra UI
+- Tanstack Query
 
-## Expanding the ESLint configuration
+## Objectif
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Ce projet à pour objectif de tester tes compétences en React en l'applicant à un projet réel de rénovation énergétique.
 
-- Configure the top-level `parserOptions` property like this:
+Le but de cette application est de permettre à un utilisateur de saisir une adresse, de la charger de venir récupérer les infos de DPE correspondants.
+Ensuite d'afficher tous les DPE trouvés pour cette adresse.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+Tu peux utiliser l'API suivante pour récupérer les infos de DPE :
+
+```bash
+https://api.remi.sh/my-housing/from-ban-id/{banId}
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Documentation de l'API :
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+https://api.remi.sh/redoc
 ```
+
+
+
+
+
+## Fonctionnalités
+
+- [x] Saisir une adresse
+- [ ] Récupérer les infos de DPE correspondants
+- [ ] Afficher tous les DPE trouvés pour cette adresse
+
+## Installation
+
+
+Pré-requis
+
+- Node.js
+- npm
+
+
+```bash
+git clone git@github.com:team-argile/react-sandbox.git
+cd react-sandbox
+npm install
+```
+Lancer le projet
+
+```bash
+npm run dev
+```
+
+
+
+
+
