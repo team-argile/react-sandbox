@@ -12,7 +12,11 @@ function App() {
 
   return (
     <Box p="2rem" direction="column" w="100vw" h="100vh" bg="gray.100">
-      <AddressInput onValueChanged={setAddress} value={address} />
+      <AddressInput
+        onValueChanged={setAddress}
+        value={address}
+        onClear={() => setAddress(null)}
+      />
       <Text>{displayText}</Text>
     </Box>
   );

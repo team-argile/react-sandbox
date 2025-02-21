@@ -5,7 +5,7 @@ export const useFetchAddressSuggestions = (addressInput: string) => {
   const { data, isLoading, isError } = useQuery({
     queryKey: ["fetchAddressSuggestions", addressInput],
     queryFn: () => searchAddressSuggestions(addressInput, 5),
-    enabled: !!addressInput && addressInput.length > 3,
+    enabled: !!addressInput && addressInput.length > 30,
     staleTime: 5 * 60 * 1000,
   });
 
