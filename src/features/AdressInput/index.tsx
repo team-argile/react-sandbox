@@ -8,6 +8,21 @@ import {
 } from "./helpers/addressHelpers";
 import { useFetchAddressSuggestions } from "@/hooks/useFetchAddressSuggestions";
 import { BanFormat, Feature } from "@/types/address";
+import { CSSObject } from "@emotion/react";
+
+const styles = {
+  container: (provided: CSSObject) => ({
+    ...provided,
+    width: "500px",
+  }),
+  control: (provided: CSSObject) => ({
+    ...provided,
+    borderRadius: "12px",
+    padding: "5px 2px 5px 7px",
+    border: "none", // This removes the border on the input field
+    boxShadow: "none", // This removes any shadow that might be applied to the border
+  }),
+};
 
 type AddressInputProps = FlexProps & {
   onValueChanged: (address: BanFormat) => void;
@@ -22,7 +37,6 @@ export default function AddressInput({
   onValueChanged,
   onClear,
   value,
-  ...rest
 }: AddressInputProps) {
   const [inputValue, setInputValue] = useState("");
   const {
@@ -82,29 +96,28 @@ export default function AddressInput({
   );
 
   return (
-    <Flex justify="start" gap={2} align="start" direction="column">
-      <Flex gap={5} width="100%" {...rest}>
-        <Select
-          options={options}
-          onInputChange={handleInputChange}
-          onChange={handleChange}
-          isLoading={isLoadingAutocomplete}
-          defaultValue={option}
-          inputValue={inputValue}
-          isClearable
-          filterOption={() => true}
-          placeholder={"1 grande-rue 25000 Besançon"}
-          loadingMessage={() => "Chargement des suggestions..."}
-          noOptionsMessage={() =>
-            isError
-              ? "Impossible de charger des suggestions..."
-              : "Aucune adresse trouvée"
-          }
-          components={{
-            Input,
-          }}
-        />
-      </Flex>
+    <Flex gap={2} align="center" direction="column" m={10} w="100%">
+      <Select
+        styles={styles}
+        options={options}
+        onInputChange={handleInputChange}
+        onChange={handleChange}
+        isLoading={isLoadingAutocomplete}
+        defaultValue={option}
+        inputValue={inputValue}
+        isClearable
+        filterOption={() => true}
+        placeholder={"1 grande-rue 25000 Besançon"}
+        loadingMessage={() => "Chargement des suggestions..."}
+        noOptionsMessage={() =>
+          isError
+            ? "Impossible de charger des suggestions..."
+            : "Aucune adresse trouvée"
+        }
+        components={{
+          Input,
+        }}
+      />
     </Flex>
   );
 }
