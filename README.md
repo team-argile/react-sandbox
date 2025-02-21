@@ -1,15 +1,15 @@
-# BétonArmé.ai
+# 🧠 BétonArmé.ai 🦾
 
 Bienvenue sur le projet BétonArmé.ai.
 
-## Technologies utilisées
+## 💻 Technologies utilisées
 
 - React + Vite
 - TypeScript
 - Chakra UI
 - Tanstack Query
 
-## Objectif
+## 🎯 Objectif
 
 Ce projet à pour objectif de tester tes compétences en React en l'applicant à un projet réel de rénovation énergétique.
 
@@ -33,13 +33,13 @@ https://api.remi.sh/redoc
 
 
 
-## Fonctionnalités
+## 📝 Fonctionnalités
 
 - [x] Saisir une adresse
 - [ ] Récupérer les infos de DPE correspondants
 - [ ] Afficher tous les DPE trouvés pour cette adresse
 
-## Installation
+## 📦 Installation
 
 
 Pré-requis
