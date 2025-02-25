@@ -24,7 +24,7 @@ Tu peux utiliser l'API suivante pour récupérer les infos de DPE :
 https://api.argile.ai/my-housing/from-ban-id/{banId}
 ```
 
-Documentation de l'API : https://api.argile.ai/redoc
+Documentation de l'API : [https://api.argile.ai/redoc](https://api.argile.ai/redoc)
 
 <aside>
 💡
