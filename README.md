@@ -1,3 +1,4 @@
+
 # **🧠 BétonArmé.ai 🦾**
 
 Bienvenue sur le projet BétonArmé.ai.
@@ -20,10 +21,10 @@ Ensuite d'afficher tous les DPE trouvés pour cette adresse.
 Tu peux utiliser l'API suivante pour récupérer les infos de DPE :
 
 ```python
-https://api.remi.sh/my-housing/from-ban-id/{banId}
+https://api.argile.ai/my-housing/from-ban-id/{banId}
 ```
 
-Documentation de l'API : https://api.remi.sh/redoc
+Documentation de l'API : https://api.argile.ai/redoc
 
 <aside>
 💡
@@ -37,6 +38,8 @@ Note: qu’est qu’un DPE ? En France, le DPE (Diagnostic de Performance Énerg
 - [x]  Saisir une adresse
 - [ ]  Récupérer les infos de DPE correspondants
 - [ ]  Afficher tous les DPE trouvés pour cette adresse
+
+On aimerait connaître les informations importantes de chaque objet DPE renvoyé, donc sa note DPE, sa note GES, l’adresse, sa surface habitable et s’il s’agit d’une maison ou d’un appartement.
 
 ## **📦 Installation**
 
