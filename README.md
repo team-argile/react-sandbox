@@ -41,6 +41,14 @@ Note: qu’est qu’un DPE ? En France, le DPE (Diagnostic de Performance Énerg
 
 On aimerait connaître les informations importantes de chaque objet DPE renvoyé, donc sa note DPE, sa note GES, l’adresse, sa surface habitable et s’il s’agit d’une maison ou d’un appartement.
 
+
+<aside>
+💡
+
+Hint: certains types et méthodes sont déjà définies dans la codebase, à toi d’explorer tout ça
+
+</aside>
+
 ## **📦 Installation**
 
 Pré-requis
