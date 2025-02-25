@@ -36,6 +36,7 @@ Note: qu’est qu’un DPE ? En France, le DPE (Diagnostic de Performance Énerg
 ## **📝 Fonctionnalités**
 
 - [x]  Saisir une adresse
+- [ ]  Valider l'adresse
 - [ ]  Récupérer les infos de DPE correspondants
 - [ ]  Afficher tous les DPE trouvés pour cette adresse
 
